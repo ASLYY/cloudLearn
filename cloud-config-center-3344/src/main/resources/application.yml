@@ -1,0 +1,23 @@
+server:
+  port: 3344
+
+spring:
+  application:
+    name:  cloud-config-center #注册进Eureka服务器的微服务名
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ASLYY/springcloud-config.git #GitHub上面的git仓库名字
+          ####搜索目录
+          ###注意！search-paths配置需要注意，如果你的yml文件在github或者gitee中是放在某个文件夹下的，则这里一定要加上文件夹的名字，而不是写项目名！
+          search-paths:
+            - springcloud-config
+      ####读取分支
+      label: main
+
+#服务注册到eureka地址
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7001/eureka
