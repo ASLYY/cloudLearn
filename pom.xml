@@ -10,7 +10,7 @@
   <packaging>pom</packaging>
 
   <modules>
-    <module>cloud_provider_payment</module>
+    <module>cloud_provider_payment8001</module>
     <module>cloud-consumer-order80</module>
       <module>cloud-api-commons</module>
       <module>cloud-eureka-server7001</module>
@@ -28,6 +28,13 @@
       <module>cloud-config-center-3344</module>
       <module>cloud-config-client-3355</module>
       <module>cloud-config-client-3366</module>
+      <module>cloud-stream-rabbitmq-provider8801</module>
+      <module>cloud-stream-rabbitmq-consumer8802</module>
+      <module>cloud-stream-rabbitmq-consumer8803</module>
+    <module>cloudalibaba-provider-payment9001</module>
+      <module>cloudalibaba-provider-payment9002</module>
+      <module>cloudalibaba-consumer-nacos-order83</module>
+      <module>cloudalibaba-config-nacos-client3377</module>
   </modules>
 
   <name>Maven</name>
